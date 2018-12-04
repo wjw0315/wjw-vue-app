@@ -5,7 +5,7 @@
       <router-view></router-view>
       <!-- <router-view keep-alive transition-mode="out-in" transition="fade" ></router-view> -->
       <!-- 非路由组件视图 -->
-      <tabbar :selected="selected" :tabs='tabs' v-show="this.$route.meta.show"></tabbar>
+      <tabbar  v-show="this.$route.meta.show"></tabbar>
   </div>
 </template>
 

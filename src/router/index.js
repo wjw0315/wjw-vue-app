@@ -7,6 +7,7 @@ const bloglist = () => import('../pages/bloglist.vue')
 const file = () => import('../pages/file.vue')
 const search = () => import('../pages/search.vue')
 const usercenter = () => import('../pages/usercenter.vue')
+const htmlpage = () => import('../pages/HtmlPage.vue')
 
 // 全局注册Vue-router组件
 Vue.use(Router)
@@ -55,6 +56,13 @@ export default new Router({
       meta: {
         item: '我的',
         show: true
+      }
+    },
+    {
+      path: '/htmlpage',
+      component: htmlpage,
+      meta: {
+        show: false
       }
     }
 

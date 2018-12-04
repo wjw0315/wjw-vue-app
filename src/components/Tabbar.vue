@@ -22,41 +22,39 @@
   </mt-tab-item>
 </mt-tabbar>
 </template>
- 
- 
+
 <script>
 export default {
-  data(){
-    return{ 
-    //选中的tabbar值selected为外面页面传入的值selected
-      selected:"1",
-    //这里使用的icon图标为图片，所以需要加图片改变的传入，阿若使用里图标，则不用加
+  data () {
+    return {
+    // 选中的tabbar值selected为外面页面传入的值selected
+      selected: '1'
+    // 这里使用的icon图标为图片，所以需要加图片改变的传入，阿若使用里图标，则不用加
       // atabs:this.tabs,
     }
   },
-  props:{
+  props: {
     // selected: String,
     // tabs:Array,
   },
   watch: {
     selected: function (val, oldVal) {
       // 这里就可以通过 val 的值变更来确定去向
-      switch(val){
+      switch (val) {
         case '1':
-          this.$router.push('/bloglist');
-        break;
+          this.$router.push('/bloglist')
+          break
         case '2':
-          this.$router.push('/file');
-        break;
+          this.$router.push('/file')
+          break
         case '3':
-          this.$router.push('/search');
-        break;
+          this.$router.push('/search')
+          break
         case '4':
-          this.$router.push('/usercenter');
-        break;
+          this.$router.push('/usercenter')
+          break
       }
     }
-  },
+  }
 }
 </script>
-

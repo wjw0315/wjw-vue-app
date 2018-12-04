@@ -1,38 +1,32 @@
 <template>
     <div class="container">
-        <div class="row">
-            <mt-header fixed  title="博文列表">
-            <!-- <router-link to="/" slot="left">
-                <mt-button icon="back">返回</mt-button>
-            </router-link> -->
-            <!-- <mt-button icon="more" slot="right"></mt-button> -->
-            </mt-header>
-        </div>
-        <div class="row">
-            <!-- <mt-tab-container v-model="active">
-            <mt-tab-container-item id="tab-container1">
-                <mt-cell v-for="n in 10" title="tab-container 1"></mt-cell>
-            </mt-tab-container-item>
-            </mt-tab-container> -->
-            <mt-cell v-for="n in 10" title="tab-container 1"></mt-cell>
-        </div>
+        <!--<mt-header fixed  title="博文列表">-->
+          <!--&lt;!&ndash; <router-link to="/" slot="left">-->
+              <!--<mt-button icon="back">返回</mt-button>-->
+          <!--</router-link> &ndash;&gt;-->
+          <!--&lt;!&ndash; <mt-button icon="more" slot="right"></mt-button> &ndash;&gt;-->
+        <!--</mt-header>-->
+      <div class="row">
+        <router-link tag="a" :to="{path:'/htmlpage',query:{url: 'http://wjwcloud.com/2016/06/06/menu/'}}">某某文章</router-link>
+      </div>
     </div>
 
 </template>
 
 <script>
-// import Tabbar from '../components/Tabbar'
-
 export default {
   components: {
     // Tabbar
   },
   data () {
     return {
-      //       selected:"综合",
-      //       tabs:[require("../assets/image/ic_nav_news_actived.png"),require("../assets/image/ic_nav_tweet_normal.png"),
-      //          require("../assets/image/ic_nav_discover_normal.png"),require("../assets/image/ic_nav_my_normal.png")],
+
     }
+  },
+  mounted () {
+
+  },
+  methods: {
   }
 }
 </script>
